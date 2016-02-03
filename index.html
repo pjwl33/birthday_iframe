@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Shin</title>
+</head>
+
+<style type="text/css">
+  body {
+    background-color: #111;
+  }
+</style>
+
+
+<body>
+  <iframe width="1152" height="698" src="http://play.starwars.com/html5/starwars_crawlcreator/?cid=56b21f35e4b03ca7dddafac0" frameborder="0" scrolling="no" id="birthday-iframe"></iframe>
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      var iframe = document.getElementById('birthday-iframe');
+
+      var setSize = function() {
+        iframe.width = window.innerWidth;
+        iframe.height = window.innerHeight;
+      };
+
+      window.addEventListener('resize', setSize);
+    });
+  </script>
+</body>
+</html>
